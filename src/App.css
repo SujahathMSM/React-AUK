@@ -44,3 +44,25 @@
   color: #61dafb;
 }
 
+.buttons-nav{
+  padding: 5px 10px;
+  display: flex;
+  margin-top: 20px;
+}
+
+.btn{
+  padding: 10px 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.boxes{
+  border: 2px solid rgb(8, 159, 209);
+  margin: 2px 4px;
+  width: 50%;
+  margin-left: 25%;
+  background-color: rgb(231, 220, 205)
+}
+
