@@ -1,6 +1,7 @@
 import "./App.css";
 import Footer from "./Components/Footer";
 import Header from "./Components/Header";
+import Tester from "./Components/Tester";
 
 function App() {
   return (
@@ -15,6 +16,12 @@ function App() {
       <Footer name="Sujahath" age="26" city="beruwala" job="SE" langauge="JavaScript"/>
       <Footer name="Sujahath M S" age="22" city="Signapore" job="SSE" langauge="Pyhton"/>
       <Footer name="Sujahath SMM" age="24" city="Colombo" job="ASE" langauge="Java"/>
+      <Tester/>
+      <Tester/>
+      <Tester/>
+      <Tester>
+        <p>Hello, i am the child prop here</p>
+      </Tester>
     </div>
   );
 }
