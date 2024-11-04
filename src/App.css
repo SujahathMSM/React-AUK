@@ -36,3 +36,17 @@
     transform: rotate(360deg);
   }
 }
+
+.userbox{
+  border: 5px solid goldenrod;
+  border-radius: 15px;
+  padding: 5px 10px;
+  width: 50%;
+  margin-left: 25%;
+  margin-top: 20px;
+  background-color: rgb(223, 239, 234);
+}
+
+ul{
+  list-style-type: none;
+}
