@@ -50,3 +50,37 @@
 ul{
   list-style-type: none;
 }
+
+.main_block_container{
+  width: 90%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+  gap: 20px;
+}
+
+.main_block_container img{
+  width: 100%;
+  object-fit: contain;
+}
+
+.name{
+  font-weight: bold;
+}
+
+.author{
+  font-weight: 500;
+  font-size: 50px;
+  border: 5px solid rgb(1, 44, 44);
+  border-radius: 15px;
+  width: 50%;
+  margin-left: 25%;
+  padding: 10px;
+  margin-bottom: 0;
+  background-color: rgba(101, 214, 214, 0.2);
+}
+
+.author:hover{
+  cursor: pointer;
+  background-color: aqua;
+}
