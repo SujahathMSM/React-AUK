@@ -22,11 +22,13 @@ function App() {
     console.log(myVar.name);
   };
 
-  console.log(myDataState);
+  const [name, setName] = useState("");
+
+  console.log(name);
 
   return (
     <div className="App">
-      <h1>Hello Software Engineers</h1>
+      <h1 className="hello">Hello Software Engineers</h1>
       <div className="main_block_container">
         {myDataState.map(({ name, position, city, image }, index) => (
           <Person
@@ -34,12 +36,25 @@ function App() {
             position={position}
             city={city}
             image={image}
-            key={index+ Math.random()}
+            key={index + Math.random()}
           />
         ))}
       </div>
 
-      <h3 className="author">Author: {myVar.name}</h3>
+      <div className="inputField">
+        <input
+          type="text"
+          name="name"
+          id="name"
+          placeholder="Enter your name here"
+          onChange={(e) => {
+            e.preventDefault()
+            setName(e.target.value)
+          }}
+        />
+      </div>
+
+      <h3 className="author">Author: {name}</h3>
       <br />
       <br />
       <button
