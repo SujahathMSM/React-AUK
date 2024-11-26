@@ -24,7 +24,24 @@ function App() {
 
   const [name, setName] = useState("");
 
-  console.log(name);
+  const handleInputChange = (event, data) => {
+    event.preventDefault();
+    console.log(data);
+    setName(event.target.value);
+  };
+
+  console.log("Name outside the function: " + name);
+
+  const [num, setNum] = useState(0);
+
+  const handleNumChange = () => {
+    console.log("Clicked the number: " + num);
+    setTimeout(() => {
+      setNum((num) => num + 1);
+    }, 3000);
+  };
+
+  console.log("Number: " + num);
 
   return (
     <div className="App">
@@ -48,8 +65,9 @@ function App() {
           id="name"
           placeholder="Enter your name here"
           onChange={(e) => {
-            e.preventDefault()
-            setName(e.target.value)
+            // e.preventDefault()
+            // setName(e.target.value)
+            handleInputChange(e, name);
           }}
         />
       </div>
@@ -66,6 +84,18 @@ function App() {
         onClick={handlePress}
       >
         Click Me
+      </button>
+      <br />
+      <br />
+      <h1>{num}</h1>
+      <button
+        style={{
+          margin: 10,
+          padding: 10,
+        }}
+        onClick={handleNumChange}
+      >
+        Rende Number
       </button>
     </div>
   );
