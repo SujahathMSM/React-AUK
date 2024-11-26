@@ -84,3 +84,20 @@ ul{
   cursor: pointer;
   background-color: aqua;
 }
+
+.hello {
+  color: #042c7b;
+  border-radius: 15px;
+  padding: 20px;
+  margin: 20px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+  display: inline-block;
+
+}
+
+#name{
+  padding: 10px 7px;
+  border-radius: 15px;
+  width: 25%;
+  font-size: medium;
+}
